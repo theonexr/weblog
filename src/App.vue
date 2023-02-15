@@ -1,32 +1,35 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <router-view />
+    <!-- <bird/> -->
   </div>
 </template>
+<script>
+import bird from '../src/components/Demo/bird.vue'
+export default {
+  components: { bird },
+  data() {
+    return {
+
+    };
+  },
+
+  created() {
+  },
+  methods: {
+
+  },
+};
+</script>
 
 <style lang="less">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-family: "Courier New", Courier, monospace;
+  // text-align: center;
 }
 </style>
